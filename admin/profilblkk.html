@@ -1,0 +1,1649 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="robots" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="BLKKConnect : Portal Monitoring Lembaga Balai Latihan Kerja Komunitas">
+	<meta property="og:title" content="BLKKConnect : Portal Monitoring Lembaga Balai Latihan Kerja Komunitas">
+	<meta property="og:description" content="BLKKConnect : Portal Monitoring Lembaga Balai Latihan Kerja Komunitas">
+	<!-- <meta property="og:image" content="https:/fillow.dexignlab.com/xhtml/social-image.png"> -->
+	<meta name="format-detection" content="telephone=no">
+	
+	<!-- PAGE TITLE HERE -->
+	<title>Admin Dashboard</title>
+	
+	<!-- FAVICONS ICON -->
+	<link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+	<link href="../vendor/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+	<link href="../vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<link rel="stylesheet" href="../vendor/nouislider/nouislider.min.css">
+	<link href="../vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+	 <!-- Pick date -->
+    <link rel="stylesheet" href="../vendor/pickadate/themes/default.css">
+    <link rel="stylesheet" href="../vendor/pickadate/themes/default.date.css">
+	<link href="../icon.css?family=Material+Icons" rel="stylesheet">
+	<!-- Style css -->
+    <link href="../css/style.css" rel="stylesheet">
+	
+</head>
+<body>
+
+     <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+		<div class="lds-ripple">
+			<div></div>
+			<div></div>
+		</div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+	
+		<div class="nav-header">
+            <a href="index.html" class="brand-logo">
+				
+				<div class="brand-title">
+					<img src="../images/logo.png">
+				</div>
+            </a>
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+		
+		
+		
+		<!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header border-bottom">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">        
+                           <div class="header-left">
+							<div class="dashboard_bar">
+                               
+                            </div>
+                        </div>     
+                       <ul class="navbar-nav header-right">
+							
+							
+							<li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
+									<svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M23.3333 19.8333H23.1187C23.2568 19.4597 23.3295 19.065 23.3333 18.6666V12.8333C23.3294 10.7663 22.6402 8.75902 21.3735 7.12565C20.1068 5.49228 18.3343 4.32508 16.3333 3.80679V3.49996C16.3333 2.88112 16.0875 2.28763 15.6499 1.85004C15.2123 1.41246 14.6188 1.16663 14 1.16663C13.3812 1.16663 12.7877 1.41246 12.3501 1.85004C11.9125 2.28763 11.6667 2.88112 11.6667 3.49996V3.80679C9.66574 4.32508 7.89317 5.49228 6.6265 7.12565C5.35983 8.75902 4.67058 10.7663 4.66667 12.8333V18.6666C4.67053 19.065 4.74316 19.4597 4.88133 19.8333H4.66667C4.35725 19.8333 4.0605 19.9562 3.84171 20.175C3.62292 20.3938 3.5 20.6905 3.5 21C3.5 21.3094 3.62292 21.6061 3.84171 21.8249C4.0605 22.0437 4.35725 22.1666 4.66667 22.1666H23.3333C23.6428 22.1666 23.9395 22.0437 24.1583 21.8249C24.3771 21.6061 24.5 21.3094 24.5 21C24.5 20.6905 24.3771 20.3938 24.1583 20.175C23.9395 19.9562 23.6428 19.8333 23.3333 19.8333Z" fill="#717579"></path>
+										<path d="M9.9819 24.5C10.3863 25.2088 10.971 25.7981 11.6766 26.2079C12.3823 26.6178 13.1838 26.8337 13.9999 26.8337C14.816 26.8337 15.6175 26.6178 16.3232 26.2079C17.0288 25.7981 17.6135 25.2088 18.0179 24.5H9.9819Z" fill="#717579"></path>
+									</svg>
+                                    <span class="badge light text-white bg-warning rounded-circle">12</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <div id="DZ_W_Notification1" class="widget-media dlab-scroll p-3" style="height:380px;">
+										<ul class="timeline">
+											<li>
+												<div class="timeline-panel">
+													<div class="media me-2">
+														<img alt="image" width="50" src="../images/avatar/1.jpg">
+													</div>
+													<div class="media-body">
+														<h6 class="mb-1">Dr sultads Send you Photo</h6>
+														<small class="d-block">29 July 2020 - 02:26 PM</small>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="timeline-panel">
+													<div class="media me-2 media-info">
+														KG
+													</div>
+													<div class="media-body">
+														<h6 class="mb-1">Resport created successfully</h6>
+														<small class="d-block">29 July 2020 - 02:26 PM</small>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="timeline-panel">
+													<div class="media me-2 media-success">
+														<i class="fa fa-home"></i>
+													</div>
+													<div class="media-body">
+														<h6 class="mb-1">Reminder : Treatment Time!</h6>
+														<small class="d-block">29 July 2020 - 02:26 PM</small>
+													</div>
+												</div>
+											</li>
+											 <li>
+												<div class="timeline-panel">
+													<div class="media me-2">
+														<img alt="image" width="50" src="../images/avatar/1.jpg">
+													</div>
+													<div class="media-body">
+														<h6 class="mb-1">Dr sultads Send you Photo</h6>
+														<small class="d-block">29 July 2020 - 02:26 PM</small>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="timeline-panel">
+													<div class="media me-2 media-danger">
+														KG
+													</div>
+													<div class="media-body">
+														<h6 class="mb-1">Resport created successfully</h6>
+														<small class="d-block">29 July 2020 - 02:26 PM</small>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="timeline-panel">
+													<div class="media me-2 media-primary">
+														<i class="fa fa-home"></i>
+													</div>
+													<div class="media-body">
+														<h6 class="mb-1">Reminder : Treatment Time!</h6>
+														<small class="d-block">29 July 2020 - 02:26 PM</small>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+                                    <a class="all-notification" href="javascript:void(0);">See all notifications <i class="ti-arrow-end"></i></a>
+                                </div>
+                            </li>
+							
+							
+					
+							
+							<li class="nav-item dropdown  header-profile">
+								<a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
+									<img src="../images/user.jpg" width="56" alt="">
+								</a>
+								<div style="margin-left:10px;">
+									<span> Administrator</span>
+									<br><small style="color: #8C8CA1">admin@mail.com</small>
+								</div>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="app-profile.html" class="dropdown-item ai-icon">
+										<svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+										<span class="ms-2">Profile </span>
+									</a>
+									
+									<a href="page-error-404.html" class="dropdown-item ai-icon">
+										<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+										<span class="ms-2">Logout </span>
+									</a>
+								</div>
+							</li>
+                        </ul>
+                    </div>
+				</nav>
+			</div>
+		</div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+ <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <center>
+        <div class="dlabnav">
+            <div class="dlabnav-scroll">
+				<ul class="metismenu" id="menu">
+                    <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+							<i class="fas fa-home"></i>
+							<span class="nav-text">Dashboard</span>
+						</a>
+                        <ul aria-expanded="false">
+							<li><a href="dashboard.html">Dashboard Admin</a></li>
+							<li><a href="dashboard-fkn.html">Dashboard FKN</a></li>
+							<li><a href="../lembaga/dashboard-blkk.html">Dashboard BLKK</a></li>
+							<li><a href="../peserta/dashboard-peserta.html">Dashboard Peserta</a></li>
+						
+						</ul>
+
+                    </li>
+					
+					 <li><a href="lembaga.html" aria-expanded="false">
+							<i class="fas fa-university"></i>
+							<span class="nav-text">Balai Pelatihan</span>
+						</a>
+						
+                        
+                    </li>
+				
+                   
+                    <li><a href="laporanblkk.html" aria-expanded="false">
+							<i class="fas fa-chart-line"></i>
+							<span class="nav-text">Laporan BLKK</span>
+						</a>
+                        
+                    </li>
+
+					
+                    
+					 <li><a href="help.html" class="" aria-expanded="false">
+							<i class="fas fa-question-circle"></i>
+							<span class="nav-text">Help</span>
+						</a>
+					</li>
+                
+                
+                   
+                </ul>
+				<div class="side-bar-profile">
+					<div class="d-flex align-items-center justify-content-between mb-3">
+						<div class="side-bar-profile-img">
+							<img src="../images/user.jpg" alt="">
+						</div>
+						<div class="profile-info1">
+							<h4 class="fs-18 font-w500">Administrator</h4>
+							<span>example@mail.com</span>
+						</div>
+						<div class="profile-button">
+							<i class="fas fa-caret-down scale5 text-light"></i>
+						</div>
+					</div>	
+					<div class="d-flex justify-content-between mb-2 progress-info">
+						<span class="fs-12"><i class="fas fa-star text-orange me-2"></i>Task Progress</span>
+						<span class="fs-12">20/45</span>
+					</div>
+					<div class="progress default-progress">
+						<div class="progress-bar bg-gradientf progress-animated" style="width: 45%; height:10px;" role="progressbar">
+							<span class="sr-only">45% Complete</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="copyright">
+					<p><strong>Portal BLKK</strong> © 2022 All Rights Reserved</p>
+					<p class="fs-12">Made with <span class="heart"></span> by Mas Pirman</p>
+				</div>
+			</div>
+        </div>
+        </center>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+		
+		
+		<!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+        	
+            <!-- row -->
+			
+
+              <div class="container-fluid bg-primary bg-prof">
+              	<div class="row bg-transparent">
+              		
+                    <div class="col-lg-12">
+                        <div class="profile card bg-transparent card-body px-3 pt-3 pb-0">
+                            <div class="profile-head">
+                         
+                                <div class="profile-info">
+					
+                    
+									<div class="profile-details">
+										<div class="profile-name px-3 pt-2 text-white ">
+											<h3 class="text-white mb-0 fs-30">BLKK PONDOK PESANTREAN AL-AMIN</h3>
+											<div class="pt-2 pb-2">
+												
+												<div class="pt-2">
+													
+													<h5 class="m-b-5 text-white fs-20"><i class="fas fa-map-marker">&nbsp</i> Mojokerto, Jawa Timur</h5>
+													<br>
+													
+													<h5 class="m-b-5 fs-20 text-white">Pimpinan : Ali Murtadho, S.pd</h5>
+													<h5 class="m-b-5 fs-20 text-white">Berdiri Sejak Tahun 2009</h5>
+												</div>
+
+											</div>
+										</div>
+										<div class="profile-name px-6 pt-2 ms-xl-5 card">
+											<div class="profile-news card-body">
+											<div class="media pt-2 pb-2 pe-5 me-sm-5 ">
+												<img src="../images/blkk/qr.png" alt="image" class="me-5" width="100">
+												<div class="media-body">
+													<p class="mb-0 fs-14">Nomor VIN</p>
+													<h5 class="m-b-5 fs-18"><a href="post-details.html" class="text-black">99875788567</a></h5>
+													
+													<p class="mb-0 fs-14">Tanggal Terdaftar</p>
+													<h5 class="m-b-5 fs-18"><a href="post-details.html" class="text-black">12 Januari 2009</a></h5>
+												</div>
+
+											</div>
+										</div>
+											
+										</div>
+										<div class="px-2 pt-2 ms-auto ">
+										
+										</div>
+										
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+  <div class="container-fluid">
+                    <div class="bg-transparent">
+                    	
+                           
+                           
+                                <ul class="nav nav-pills mb-4 fs-18 ">
+                                    <li class=" nav-item">
+                                        <a href="#profil" class="nav-link text-white active" data-bs-toggle="tab" aria-expanded="false">Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#program" class="nav-link text-white" data-bs-toggle="tab" aria-expanded="false">Program</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#peserta" class="nav-link text-white" data-bs-toggle="tab" aria-expanded="true">Peserta</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#pegawai" class="nav-link text-white" data-bs-toggle="tab" aria-expanded="true">Pegawai</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#sarana" class="nav-link text-white" data-bs-toggle="tab" aria-expanded="true">Sarana & Prasarana</a>
+                                    </li>
+                                </ul>
+                                <br>
+
+                         	
+                        
+                    </div>
+
+                
+              	</div>
+              </div>
+
+</div>
+             <div class="container-fluid">
+             	  <div class="col-xl-12">
+              		       <div class="tab-content">
+                                    <div id="profil" class="tab-pane active">
+                                        <div class="row">
+                                        	 <div class="col-xl-8 col-md-4">
+                     
+							             		<div class="card bg-transparent">
+
+							             				<div class="row">
+							             					
+											             		<div class="card">
+											              			<div class="card-body">
+				                                            			<div class="col-md-12"> 
+				                                            				<h2>Informasi Lembaga</h2>
+				                                                				
+				                                                <div class="pt-3">
+				                                                    <div class="settings-form">
+				                                                        
+				                                                      
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Nama Lembaga</label>
+				                                                                    <p>BLKK PONDOK PESANTREN AL-AMIN</p>
+				                                                                </div>
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Nomor VIN</label>
+				                                                                  <p>9788977868767567</p>
+				                                                                </div>
+				                                                            </div>
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Pimpinan</label>
+				                                                                   <p>Ali Murtadho, S.Pd</p>
+				                                                                </div>
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Tahun Berdiri</label>
+				                                                                    <p>2012</p>
+				                                                                </div>
+				                                                            </div>
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Status</label>
+				                                                                    <p>Beroperasi</p>
+				                                                                </div>
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Akreditasi</label>
+				                                                                    <p>Belum Terakreditasi</p>
+				                                                                </div>
+				                                                            </div>
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Luas Area</label>
+				                                                                    <p>400 M<sup>2</sup> </p>
+				                                                                </div>
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Jumlah Pegawai</label>
+				                                                                    <p>3 Orang (1 Laki-laki, 2 Perempuan)</p>
+				                                                                </div>
+				                                                            </div>
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Sektor Potensial</label>
+				                                                                    <p>KONSTRUKSI, INDUSTRI PENGOLAHAN (MANUFAKTUR), JASA</p>
+				                                                                </div>
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Kejuruan Unggulan</label>
+				                                                                    <p>Design Graphic</p>
+				                                                                </div>
+				                                                            </div>
+
+				                                                            
+				                                                            
+				                                                           
+							                                                        
+							                                                    </div>
+							                                                </div>
+				                                                   		 		
+								                                            </div>
+								                                        </div>
+								                                    </div>
+
+							             		</div>
+
+				                                    <div class="row">
+				                                    	
+				                                    		<div class="card">
+				                                    		
+				                                        <div class="card-body">
+                                            					<div class="col-md-12"> 
+                                            				<h2>Tentang Lembaga</h2>
+                                                				
+				                                                <div class="pt-3 justify-text">
+				                                                	<p>
+				                                                		LPK AIRI TEKNO Adalah Lembaga Pelatihan Kerja Yang Bergerak Di Bidang Teknologi Dan Bidang Bisnis Dan Managemen Yang Berdiri Pada Tahun 2019 Dengan Legalitas Akta Notaris Bernomor : 05 Tertanggal 05 Januari 2022 Yang Dibuat Oleh Notaris Panji Iswandi, SH., M.Kn. Surat Keterangan Terdaftar Dari Kementerian Hukum Dan Hak Asasi Manusia Bernomor : AHU-0000016-AH.01.18 Tahun 2022 Diterbitkan Di Jakarta Pada Tanggal 06 Januari Bertanda Tangan Cahyo Rahadian Muzhar, SH., LLM Selaku Dirjend Administrasi Hukum Umum. Nomor Induk Berwirausaha Diterbitkan Di Jakarta Pada Tanggal 02 Maret 2022 Oleh Kementerian Investasi ( Badan Koordinasi Penanaman Modal Dengan Nomor : 0203220043553.</p>
+				                                                		<p>Berdasarkan Penerbitan Surat Izin Menyelenggarakan Lembaga Pelatihan Kerja Yang Dikeluarkan Oleh Dinas Penanaman Modal Dan Pelayanan Satu Pintu Kota Makassar Pada Tanggal 07 Maret 2022 Bernomor : 503/0006/LPK/DPM-PTSP/III/2022 Dan Ditandatangi Oleh A. Zulkfly S.STP., M.Si Selaku Kepala Dinas LPK AIRI TEKNO Menyelenggarakan Enam (6) Pelatihan Kejuruan, Yaitu: 1.Bisnis Dan Manajemen (Sosial Media Marketing), 2. Teknik Otomotif, 3.Teknik Pendingin, 4. Teknik Pengelasan, 5.Tata Boga, 6. Tata Busana.</p>
+				                                                		<p>LPK AIRI TEKNO Mengupayakan Terciptanya Tenaga Kerja Yang Kompeten, Intelek, Bermoral Dan Berdaya Saing Global. Sebagai Lembaga Yang Baru Berdiri, LPK AIRI TEKNO Dalam Mencapai Visi Memperhatikan Dua Hal Penting Yaitu Peralatan Dan Instruktur.</p>
+																		<p>
+																		Untuk Ketersediaan Peralatan Yang Lengkap, Saat Ini LPK AIRI TEKNO Bekerjasama Dengan FAKULTAS TEKNIK UNM Dalam Hal Penggunaan Fasilitas Laboratorium. Sedangkan Untuk Instruktur, Berasal Dari Akademisi Dan Praktisi Di Bidangnya Masing-Masing.</p>																		
+																						                                                	</p>
+				                                                   
+				                                                </div>
+                                                   		 		
+				                                            </div>
+				                                        </div>	
+				                                    </div>
+				                                </div>
+				                                <div class="row">
+							             					
+											             		<div class="card">
+											              			<div class="card-body">
+				                                            			<div class="col-md-12"> 
+				                                            				<h2>Kejuruan Lembaga</h2>
+				                                                				
+				                                                <div class="pt-3">
+				                                                    <div class="settings-form">
+				                                                        
+				                                                      
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                   
+				                                                                   <ul>
+				                                                                   	<li> <p>Teknik Informatika</p>
+				                                                                    </li>
+				                                                                    <li><p>Teknik Tata Busana</p>
+				                                                                    </li>
+				                                                                    <li><p>Graphic Design</p></li>
+				                                                                   </ul>
+				                                                                </div>
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    
+				                                                                  <ul type="disc">
+				                                                                  	<li><p>Teknik Industri</p></li>
+				                                                                  </ul>
+				                                                                </div>
+				                                                            </div>
+				                                                         
+
+				                                                            
+				                                                            
+				                                                           
+							                                                        
+							                                                    </div>
+							                                                </div>
+				                                                   		 		
+								                                            </div>
+								                                        </div>
+								                                    </div>
+
+										             		</div>
+
+
+
+										             		<div class="row">
+							             					
+											             		<div class="card">
+											              			<div class="card-body">
+				                                            			<div class="col-md-12"> 
+				                                            				<h2>Jenis Lembaga</h2>
+				                                                				
+				                                                <div class="pt-3">
+				                                                    <div class="settings-form">
+				                                                        
+				                                                      
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Kepemilikan Instansi</label>
+				                                                                    <p>SWASTA</p>
+				                                                                </div>
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Nomor Licensi</label>
+				                                                                  <p>503/0006/LPK/DPM-PTSP/III/2022</p>
+				                                                                </div>
+				                                                            </div>
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Nomor Identitas PIC</label>
+				                                                                   <p>7313122710860002</p>
+				                                                                </div>
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Type Industri Berdiri</label>
+				                                                                    <p>BLKK SWASTA</p>
+				                                                                </div>
+				                                                            </div>
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Nomor Pajak</label>
+				                                                                    <p>987979797887</p>
+				                                                                </div>
+				                                                                
+				                                                            </div>
+				                                                           
+
+				                                                            
+				                                                            
+				                                                           
+							                                                        
+							                                                    </div>
+							                                                </div>
+				                                                   		 		
+								                                            </div>
+								                                        </div>
+								                                    </div>
+
+							             					</div>
+
+
+
+
+
+
+
+				                                    	
+
+
+
+
+
+
+
+
+
+
+				                                    </div>
+				                                    
+
+				                               </div>
+
+
+
+
+				                   			   <div class="col-xl-4">
+													<div class="card bg-transparent">
+														<div class="card-body">
+                               
+					                           <div class="row">
+					                           	     <div class="bootstrap-carousel">
+					                                 	<div class="card bg-white rounded">
+					                                 		   <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+															<div class="carousel-indicators">
+																<button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+																<button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+																<button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+															</div>
+					                                        <div class="carousel-inner rounded">
+					                                            <div class="carousel-item active">
+					                                                <img class="d-block w-100" src="../images/blkk/gallery/2.jpg" alt="First slide">
+					                                            </div>
+					                                            <div class="carousel-item">
+					                                                <img class="d-block w-100" src="../images/blkk/gallery/5.jpeg" alt="Second slide">
+					                                            </div>
+					                                            <div class="carousel-item">
+					                                                <img class="d-block w-100" src="../images/blkk/gallery/7.jpg" alt="Third slide">
+					                                            </div>
+					                                        </div>
+															<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+																<span class="carousel-control-prev-icon rounded-circle" aria-hidden="true"></span>
+																<span class="visually-hidden">Previous</span>
+															  </button>
+															  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+																<span class="carousel-control-next-icon" aria-hidden="true"></span>
+																<span class="visually-hidden">Next</span>
+															  </button>
+					                                    </div>
+					                                 	</div>
+					                                </div>
+					                           </div>
+
+                               							<div class="row">
+                               								<div class="card">
+                               									<div class="card-body">
+                               										<div class="profile-blog">
+																<h4 class="">Kontak Lembaga</h4>
+																 <div class="pt-3">
+                                                    <div class="settings-form">
+                                                        
+                                                      
+                                                            <div class="row">
+                                                                <div class="mb-3 col-md-6">
+                                                                    <label class="text-redup form-label">No Telp</label>
+                                                                    <p>021-8987-7678</p>
+                                                                </div>
+                                                                <div class="mb-3 col-md-6">
+                                                                    <label class="text-redup form-label">Nomor Fax</label>
+                                                                  <p>-</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="mb-3 col-md-6">
+                                                                    <label class="text-redup form-label">Email</label>
+                                                                   <p>blkkcontoh@gmail.com</p>
+                                                                </div>
+                                                                <div class="mb-3 col-md-6">
+                                                                    <label class="text-redup form-label">Website</label>
+                                                                    <p>-</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+															</div>
+                               									</div>
+                               								</div>
+                               							</div>
+														
+                           				
+														</div>
+
+
+
+
+                               							<div class="row">
+                               								<div class="card">
+                               									<div class="card-body">
+                               										<div class="profile-blog">
+																<h4 class="">Lokasi</h4>
+																 <div class="pt-3">
+			                                                    <div class="settings-form">
+			                                                    	
+			                                                    	<div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=310&amp;height=337&amp;hl=en&amp;q=BLKK Pondok Pesantren Nurul Falah Bojonegoro&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:337px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:337px;}.gmap_iframe {height:337px!important;}</style></div>
+			                                                    </div>
+															</div>
+                               									</div>
+                               								</div>
+                               							</div>
+														
+                           				
+														</div>
+
+
+
+
+										         	</div>
+												</div>
+										</div>
+                         			</div>
+                                        
+                                  </div>
+<!--                                   end nav pill 1
+ -->
+
+
+                                    <div id="program" class="tab-pane">
+                                        <div class="row">
+                                            <div class="col-md-12"> 
+                                            	<div class="card">
+                                            		<div class="card-header">
+                               							 <h2 class="card-title fs-26">Program Terdaftar</h2> 
+                            						</div>
+                                            		<div class="card-body">
+				                                        <div class="table-responsive">
+				                                    <table id="example3" class="display" style="min-width: 845px">
+				                                        <thead>
+				                                            <tr>
+				                                                <th>No</th>
+				                                                <th>Kejuruan</th>
+				                                                <th>Nama Pelatihan</th>
+				                                                <th>Standar</th>
+				                                                <th>Peserta / Tahun</th>
+				                                                <th>Ulasan</th>
+				                                                <th>Action</th>
+				                                            </tr>
+				                                        </thead>
+				                                        <tbody>
+				                                            <tr>
+				                                                <td>1</td>
+				                                                <td>Teknik Informatika</td>
+				                                                <td>Pelatihan Junior Komputer Asistant</td>
+				                                                <td>SKKN</td>
+				                                                <td><span class="badge light badge-primary">100 Orang</span></td>
+				                                                
+				                                                <td>
+				                                                	<div class="star-rating">
+																				<ul>
+																					<li><i class="fa fa-star"></i></li>
+																					<li><i class="fa fa-star"></i></li>
+																					<li><i class="fa fa-star"></i></li>
+																					<li><i class="fa fa-star-half-alt"></i></li>
+																					<li><i class="fa fa-star-o"></i></li>
+																				</ul>
+																				
+																			</div>
+				                                                </td>
+				                                              
+				                                                <td>
+																	<div class="d-flex">
+																		<a href="#" data-bs-toggle="modal" data-bs-target="#edit" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-eye"></i></a>
+
+																		
+																	</div>												
+																</td>												
+				                                            </tr>
+
+				                                                   <tr>
+				                                                <td>2</td>
+				                                                <td>Teknik Informatika</td>
+				                                                <td>Pelatihan Junior Komputer Asistant</td>
+				                                                <td>SKKN</td>
+				                                                <td><span class="badge light badge-primary">100 Orang</span></td>
+				                                                
+				                                                <td>
+				                                                	<div class="star-rating">
+																				<ul>
+																					<li><i class="fa fa-star"></i></li>
+																					<li><i class="fa fa-star"></i></li>
+																					<li><i class="fa fa-star"></i></li>
+																					<li><i class="fa fa-star-half-alt"></i></li>
+																					<li><i class="fa fa-star-o"></i></li>
+																				</ul>
+																				
+																			</div>
+				                                                </td>
+				                                              
+				                                                <td>
+																	<div class="d-flex">
+																		<a href="#" data-bs-toggle="modal" data-bs-target="#edit" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-eye"></i></a>
+
+																		
+																	</div>												
+																</td>												
+				                                            </tr>
+
+				                                                   <tr>
+				                                                <td>3</td>
+				                                                <td>Teknik Informatika</td>
+				                                                <td>Pelatihan Junior Komputer Asistant</td>
+				                                                <td>SKKN</td>
+				                                                <td><span class="badge light badge-primary">100 Orang</span></td>
+				                                                
+				                                                <td>
+				                                                	<div class="star-rating">
+																				<ul>
+																					<li><i class="fa fa-star"></i></li>
+																					<li><i class="fa fa-star"></i></li>
+																					<li><i class="fa fa-star"></i></li>
+																					<li><i class="fa fa-star-half-alt"></i></li>
+																					<li><i class="fa fa-star-o"></i></li>
+																				</ul>
+																				
+																			</div>
+				                                                </td>
+				                                              
+				                                                <td>
+																	<div class="d-flex">
+																		<a href="#" data-bs-toggle="modal" data-bs-target="#edit" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-eye"></i></a>
+
+																		
+																	</div>												
+																</td>												
+				                                            </tr>
+				                                                   <tr>
+				                                                <td>4</td>
+				                                                <td>Teknik Informatika</td>
+				                                                <td>Pelatihan Junior Komputer Asistant</td>
+				                                                <td>SKKN</td>
+				                                                <td><span class="badge light badge-primary">100 Orang</span></td>
+				                                                
+				                                                <td>
+				                                                	<div class="star-rating">
+																				<ul>
+																					<li><i class="fa fa-star"></i></li>
+																					<li><i class="fa fa-star"></i></li>
+																					<li><i class="fa fa-star"></i></li>
+																					<li><i class="fa fa-star-half-alt"></i></li>
+																					<li><i class="fa fa-star-o"></i></li>
+																				</ul>
+																				
+																			</div>
+				                                                </td>
+				                                              
+				                                                <td>
+																	<div class="d-flex">
+																		<a href="#" data-bs-toggle="modal" data-bs-target="#edit" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-eye"></i></a>
+
+																		
+																	</div>												
+																</td>												
+				                                            </tr>
+
+				                                       
+				                                        </tbody>
+				                                    </table>
+                               					 </div>
+
+                                            		</div>
+                                            	</div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="row">
+                                            <div class="col-md-12"> 
+                                            	<div class="card">
+                                            		<div class="card-header">
+                               							 <h4 class="card-title">Realisasi Pelatihan</h4> 
+                            						</div>
+                                            		<div class="card-body">
+				                                        <div class="table-responsive">
+				                                    <table id="example3" class="display" style="min-width: 845px">
+				                                        <thead>
+				                                            <tr>
+				                                                <th>No</th>
+				                                                <th>Kejuruan</th>
+				                                                <th>Jenis Program</th>
+				                                                <th>Nama Pelatihan</th>
+				                                                <th>Tahun</th>
+				                                                <th>Dana</th>
+				                                                <th>Peserta</th>
+				                                                
+				                                            </tr>
+				                                        </thead>
+				                                        <tbody>
+				                                            <tr>
+				                                                <td>1</td>
+				                                                <td>Teknik Informatika</td>
+				                                                <td>Komputer</td>
+				                                                <td>Pelatihan Junior Komputer Asistant</td>
+				                                                <td>2020</td>
+				                                                <td><span class="badge light badge-primary">APBN</span></td>
+				                                                <td>30 Orang</td>
+						                                              
+				                                                										
+				                                            </tr>
+
+				                                                  <tr>
+				                                                <td>2</td>
+				                                                <td>Teknik Informatika</td>
+				                                                <td>Komputer</td>
+				                                                <td>Pelatihan Junior Komputer Asistant</td>
+				                                                <td>2020</td>
+				                                                <td><span class="badge light badge-primary">APBN</span></td>
+				                                                <td>30 Orang</td>
+						                                              
+				                                               								
+				                                            </tr>
+				                                            <tr>
+				                                                <td>3</td>
+				                                                <td>Teknik Informatika</td>
+				                                                <td>Komputer</td>
+				                                                <td>Pelatihan Junior Komputer Asistant</td>
+				                                                <td>2020</td>
+				                                                <td><span class="badge light badge-primary">APBN</span></td>
+				                                                <td>30 Orang</td>
+						                                              
+				                                               									
+				                                            </tr>
+				                                            <tr>
+				                                                <td>4</td>
+				                                                <td>Teknik Informatika</td>
+				                                                <td>Komputer</td>
+				                                                <td>Pelatihan Junior Komputer Asistant</td>
+				                                                <td>2020</td>
+				                                                <td><span class="badge light badge-primary">APBN</span></td>
+				                                                <td>30 Orang</td>
+						                                              
+				                                                							
+				                                            </tr>
+				                                       
+				                                        </tbody>
+				                                    </table>
+                               					 </div>
+
+                                            		</div>
+                                            	</div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <div id="peserta" class="tab-pane">
+                                        <div class="row">
+                                            <div class="col-md-12">
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="card-title fs-26">Daftar Peserta</h2> <br>
+                             <button data-bs-toggle="modal" data-bs-target="#export" type="button" class="btn btn-rounded btn-primary"><span class="btn-icon-start text-primary"><i class="fa fa-print color-info"></i></span>Export</button>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table id="example3" class="display" style="min-width: 845px">
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                               
+                                                <th>Kode Peserta</th>
+                                                <th>Nama Peserta</th>
+                                                <th>Alamat</th>
+                                                <th>Nama Pelatihan</th>
+                                                <th>Status Peserta</th>
+                                                <th>Angkatan</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                
+                                                <td>PTHAMIN987</td>
+                                                <td>Saipul Haryadi</td>
+                                                <td>RT 07/12 Mekarjaya, Mojosari, Mojokerto</td>
+                                                <td>Pelatihan Junior Computer Asistant</td>
+                                                <td><span class="badge light badge-success">Aktif</span></td>
+                                              	<td>2021</td>
+                                                <td>
+													<div class="d-flex">
+														<a href="#" data-bs-toggle="modal" data-bs-target="#edit" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-eye"></i></a>
+
+													</div>												
+												</td>												
+                                            </tr>
+
+                                       
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                                <div id="pegawai" class="tab-pane">
+                                        <div class="row">
+                                            <div class="col-md-12">
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="card-title fs-26">Daftar Pegawai</h2> <br>
+                             
+                            </div>
+                            <div class="card-body">
+                            	<div class="row">
+                            		
+					<div class="col-xl-12">
+						<div class="row">
+							<div class="col-xl-3 col-xxl-4 col-lg-4 col-md-6 col-sm-6 items">
+								<div class="card contact-bx item-content">
+									<div class="card-header border-0">
+										<div class="action-dropdown">
+											<div class="dropdown ">
+												<div class="btn-link" data-bs-toggle="dropdown">
+													<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<circle cx="12.4999" cy="3.5" r="2.5" fill="#A5A5A5"></circle>
+														<circle cx="12.4999" cy="11.5" r="2.5" fill="#A5A5A5"></circle>
+														<circle cx="12.4999" cy="19.5" r="2.5" fill="#A5A5A5"></circle>
+													</svg>
+												</div>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="javascript:void(0)">Delete</a>
+													<a class="dropdown-item" href="javascript:void(0)">Edit</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-body user-profile">
+										<div class="image-bx">
+											<img src="../images/pic2.jpg" data-src="../images/contacts/Untitled-3.jpg" alt="" class="rounded-circle">
+											<span class="active"></span>
+										</div>
+										<div class="media-body user-meta-info">
+											<h6 class="fs-18 font-w600 my-1"><a href="app-profile.html" class="text-black user-name" data-name="Alan Green">H.Musthofa Syarif, S.pd </a></h6>
+											<p class="fs-14 mb-3 user-work" data-occupation="UI Designer">Kepala Yayasan</p>
+											<ul>
+												<li><a href="javascript:void(0);"><i class="fas fa-phone-alt"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="far fa-comment-alt"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="fas fa-video"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-xxl-4 col-lg-4 col-md-6 col-sm-6 items">
+								<div class="card contact-bx item-content">
+									<div class="card-header border-0">
+										<div class="action-dropdown">
+											<div class="dropdown ">
+												<div class="btn-link" data-bs-toggle="dropdown">
+													<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<circle cx="12.4999" cy="3.5" r="2.5" fill="#A5A5A5"></circle>
+														<circle cx="12.4999" cy="11.5" r="2.5" fill="#A5A5A5"></circle>
+														<circle cx="12.4999" cy="19.5" r="2.5" fill="#A5A5A5"></circle>
+													</svg>
+												</div>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="javascript:void(0)">Delete</a>
+													<a class="dropdown-item" href="javascript:void(0)">Edit</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-body user-profile">
+										<div class="image-bx">
+											<img src="../images/pic1.jpg" data-src="../images/contacts/Untitled-3.jpg" alt="" class="rounded-circle">
+											<span class="active"></span>
+										</div>
+										<div class="media-body user-meta-info">
+											<h6 class="fs-18 font-w600 my-1"><a href="app-profile.html" class="text-black user-name" data-name="Alan Green">Gretchen Aminoff</a></h6>
+											<p class="fs-14 mb-3 user-work" data-occupation="UI Designer">Kepala Lembaga</p>
+											<ul>
+												<li><a href="javascript:void(0);"><i class="fas fa-phone-alt"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="far fa-comment-alt"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="fas fa-video"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-xxl-4 col-lg-4 col-md-6 col-sm-6 items">
+								<div class="card contact-bx item-content">
+									<div class="card-header border-0">
+										<div class="action-dropdown">
+											<div class="dropdown ">
+												<div class="btn-link" data-bs-toggle="dropdown">
+													<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<circle cx="12.4999" cy="3.5" r="2.5" fill="#A5A5A5"></circle>
+														<circle cx="12.4999" cy="11.5" r="2.5" fill="#A5A5A5"></circle>
+														<circle cx="12.4999" cy="19.5" r="2.5" fill="#A5A5A5"></circle>
+													</svg>
+												</div>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="javascript:void(0)">Delete</a>
+													<a class="dropdown-item" href="javascript:void(0)">Edit</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-body user-profile">
+										<div class="image-bx">
+											<img src="../images/pic3.jpg" data-src="../images/contacts/Untitled-3.jpg" alt="" class="rounded-circle">
+											<span class="active"></span>
+										</div>
+										<div class="media-body user-meta-info">
+											<h6 class="fs-18 font-w600 my-1"><a href="app-profile.html" class="text-black user-name" data-name="Alan Green">Davis Siphron</a></h6>
+											<p class="fs-14 mb-3 user-work" data-occupation="UI Designer">Instruktur Komputer</p>
+											<ul>
+												<li><a href="javascript:void(0);"><i class="fas fa-phone-alt"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="far fa-comment-alt"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="fas fa-video"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-xxl-4 col-lg-4 col-md-6 col-sm-6 items">
+								<div class="card contact-bx item-content">
+									<div class="card-header border-0">
+										<div class="action-dropdown">
+											<div class="dropdown ">
+												<div class="btn-link" data-bs-toggle="dropdown">
+													<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<circle cx="12.4999" cy="3.5" r="2.5" fill="#A5A5A5"></circle>
+														<circle cx="12.4999" cy="11.5" r="2.5" fill="#A5A5A5"></circle>
+														<circle cx="12.4999" cy="19.5" r="2.5" fill="#A5A5A5"></circle>
+													</svg>
+												</div>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="javascript:void(0)">Delete</a>
+													<a class="dropdown-item" href="javascript:void(0)">Edit</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-body user-profile">
+										<div class="image-bx">
+											<img src="../images/pic4.jpg" data-src="../images/contacts/Untitled-3.jpg" alt="" class="rounded-circle">
+											<span class="active"></span>
+										</div>
+										<div class="media-body user-meta-info">
+											<h6 class="fs-18 font-w600 my-1"><a href="app-profile.html" class="text-black user-name" data-name="Alan Green">Zaire Lubin</a></h6>
+											<p class="fs-14 mb-3 user-work" data-occupation="UI Designer">Instruktur Graphic Design</p>
+											<ul>
+												<li><a href="javascript:void(0);"><i class="fas fa-phone-alt"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="far fa-comment-alt"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="fas fa-video"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-xxl-4 col-lg-4 col-md-6 col-sm-6 items">
+								<div class="card contact-bx item-content">
+									<div class="card-header border-0">
+										<div class="action-dropdown">
+											<div class="dropdown ">
+												<div class="btn-link" data-bs-toggle="dropdown">
+													<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<circle cx="12.4999" cy="3.5" r="2.5" fill="#A5A5A5"></circle>
+														<circle cx="12.4999" cy="11.5" r="2.5" fill="#A5A5A5"></circle>
+														<circle cx="12.4999" cy="19.5" r="2.5" fill="#A5A5A5"></circle>
+													</svg>
+												</div>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="javascript:void(0)">Delete</a>
+													<a class="dropdown-item" href="javascript:void(0)">Edit</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-body user-profile">
+										<div class="image-bx">
+											<img src="../images/pic4.jpg" data-src="../images/contacts/Untitled-3.jpg" alt="" class="rounded-circle">
+											<span class="active"></span>
+										</div>
+										<div class="media-body user-meta-info">
+											<h6 class="fs-18 font-w600 my-1"><a href="app-profile.html" class="text-black user-name" data-name="Alan Green">Zaire Lubin</a></h6>
+											<p class="fs-14 mb-3 user-work" data-occupation="UI Designer">Staff Admin</p>
+											<ul>
+												<li><a href="javascript:void(0);"><i class="fas fa-phone-alt"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="far fa-comment-alt"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="fas fa-video"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-xxl-4 col-lg-4 col-md-6 col-sm-6 items">
+								<div class="card contact-bx item-content">
+									<div class="card-header border-0">
+										<div class="action-dropdown">
+											<div class="dropdown ">
+												<div class="btn-link" data-bs-toggle="dropdown">
+													<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<circle cx="12.4999" cy="3.5" r="2.5" fill="#A5A5A5"></circle>
+														<circle cx="12.4999" cy="11.5" r="2.5" fill="#A5A5A5"></circle>
+														<circle cx="12.4999" cy="19.5" r="2.5" fill="#A5A5A5"></circle>
+													</svg>
+												</div>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="javascript:void(0)">Delete</a>
+													<a class="dropdown-item" href="javascript:void(0)">Edit</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-body user-profile">
+										<div class="image-bx">
+											<img src="../images/pic3.jpg" data-src="../images/contacts/Untitled-3.jpg" alt="" class="rounded-circle">
+											<span class="active"></span>
+										</div>
+										<div class="media-body user-meta-info">
+											<h6 class="fs-18 font-w600 my-1"><a href="app-profile.html" class="text-black user-name" data-name="Alan Green">Siphron Rintas</a></h6>
+											<p class="fs-14 mb-3 user-work" data-occupation="UI Designer">Teknisi</p>
+											<ul>
+												<li><a href="javascript:void(0);"><i class="fas fa-phone-alt"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="far fa-comment-alt"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="fas fa-video"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+						</div>
+					</div>
+			
+				
+                            	</div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+                                                <div id="sarana" class="tab-pane">
+                                        <div class="row">
+                                            <div class="col-md-12">
+
+                        <div class="card bg-transparent">
+                            <div class="card-header">
+                                <h2 class="card-title fs-26">Sarana saat ini</h2> <br>
+                             
+                            </div>
+                            <div class="card-body">
+                            	<div class="row">
+                            		
+					<div class="col-xl-12">
+						<div class="row">
+							<div class="col-xl-3 col-xxl-4 col-lg-4 col-md-6 col-sm-6 items">
+								<div class="card contact-bx item-content">
+									
+									<div class="card-body user-profile">
+										<div class="image">
+											<img src="../images/blkk/gedung.png" data-src="../images/blkk/gedung.png" alt="" class="rounded">
+											<span class="active"></span>
+										</div>
+										<div class="media-body user-meta-info">
+											<h6 class="fs-18 font-w600 my-1"><a href="app-profile.html" class="text-black user-name" data-name="Alan Green">Gedung Aula</a></h6>
+											<p class="fs-14 mb-3 user-work" data-occupation="UI Designer">Kondisi : Baik</p>
+											<ul>
+												<li><a title="Jumlah"><i class="fas fa-building"></i></a><b>1</b></li>
+												<li><a title="Luas"><i class="fas fa-compress"></i></a><b>12 m <sup>2</sup></b></li>
+												<li><a title="Kapasitas"><i class="fas fa-users"></i></a><b>30 Orang</b></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-xxl-4 col-lg-4 col-md-6 col-sm-6 items">
+								<div class="card contact-bx item-content">
+									
+									<div class="card-body user-profile">
+										<div class="image">
+											<img src="../images/blkk/gedung.png" data-src="../images/blkk/gedung.png" alt="" class="rounded">
+											<span class="active"></span>
+										</div>
+										<div class="media-body user-meta-info">
+											<h6 class="fs-18 font-w600 my-1"><a href="app-profile.html" class="text-black user-name" data-name="Alan Green">Gedung Aula</a></h6>
+											<p class="fs-14 mb-3 user-work" data-occupation="UI Designer">Kondisi : Baik</p>
+											<ul>
+												<li><a title="Jumlah"><i class="fas fa-building"></i></a><b>1</b></li>
+												<li><a title="Luas"><i class="fas fa-compress"></i></a><b>12 m <sup>2</sup></b></li>
+												<li><a title="Kapasitas"><i class="fas fa-users"></i></a><b>30 Orang</b></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-xxl-4 col-lg-4 col-md-6 col-sm-6 items">
+								<div class="card contact-bx item-content">
+									
+									<div class="card-body user-profile">
+										<div class="image">
+											<img src="../images/blkk/gedung.png" data-src="../images/blkk/gedung.png" alt="" class="rounded">
+											<span class="active"></span>
+										</div>
+										<div class="media-body user-meta-info">
+											<h6 class="fs-18 font-w600 my-1"><a href="app-profile.html" class="text-black user-name" data-name="Alan Green">Gedung Aula</a></h6>
+											<p class="fs-14 mb-3 user-work" data-occupation="UI Designer">Kondisi : Baik</p>
+											<ul>
+												<li><a title="Jumlah"><i class="fas fa-building"></i></a><b>1</b></li>
+												<li><a title="Luas"><i class="fas fa-compress"></i></a><b>12 m <sup>2</sup></b></li>
+												<li><a title="Kapasitas"><i class="fas fa-users"></i></a><b>30 Orang</b></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						
+						</div>
+					</div>
+			
+				
+                            	</div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+                    
+                                            </div>
+                                        </div>
+
+
+
+
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+
+                        <div class="card bg-transparent">
+                            <div class="card-header">
+                                <h4 class="card-title">Peralatan saat ini</h4> <br>
+                             
+                            </div>
+                            <div class="card-body">
+                            	<div class="row">
+                            		
+					<div class="col-xl-12">
+						<div class="row">
+							<div class="col-xl-3 col-xxl-4 col-lg-4 col-md-6 col-sm-6 items">
+								<div class="card contact-bx item-content">
+									
+									<div class="card-body user-profile">
+										<div class="image">
+											<img src="../images/blkk/sarana/proyektor.png" data-src="../images/blkk/gedung.png" alt="" class="rounded">
+											<span class="active"></span>
+										</div>
+										<div class="media-body user-meta-info">
+											<h6 class="fs-18 font-w600 my-1"><a href="app-profile.html" class="text-black user-name" data-name="Alan Green">Proyektor</a></h6>
+											
+											<ul>
+												<li><a title="Jumlah"><i class="fas fa-cogs"></i></a><b>4</b></li>
+												<li><a title="Kondisi"><i class="fas fa-heart"></i></a><b>Baik</b></li>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-xxl-4 col-lg-4 col-md-6 col-sm-6 items">
+								<div class="card contact-bx item-content">
+									
+									<div class="card-body user-profile">
+										<div class="image">
+											<img src="../images/blkk/sarana/kuncikunci.png" data-src="../images/blkk/gedung.png" alt="" class="rounded">
+											<span class="active"></span>
+										</div>
+										<div class="media-body user-meta-info">
+											<h6 class="fs-18 font-w600 my-1"><a href="app-profile.html" class="text-black user-name" data-name="Alan Green">Kunci Set</a></h6>
+											
+											<ul>
+												<li><a title="Jumlah"><i class="fas fa-cogs"></i></a><b>12</b></li>
+												<li><a title="Kondisi"><i class="fas fa-heart"></i></a><b>Baik</b></li>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-xxl-4 col-lg-4 col-md-6 col-sm-6 items">
+								<div class="card contact-bx item-content">
+									
+									<div class="card-body user-profile">
+										<div class="image">
+											<img src="../images/blkk/gedung.png" data-src="../images/blkk/gedung.png" alt="" class="rounded">
+											<span class="active"></span>
+										</div>
+										<div class="media-body user-meta-info">
+											<h6 class="fs-18 font-w600 my-1"><a href="app-profile.html" class="text-black user-name" data-name="Alan Green">Gedung Aula</a></h6>
+											<p class="fs-14 mb-3 user-work" data-occupation="UI Designer">Kondisi : Baik</p>
+											<ul>
+												<li><a title="Jumlah"><i class="fas fa-building"></i></a><b>1</b></li>
+												<li><a title="Luas"><i class="fas fa-compress"></i></a><b>12 m <sup>2</sup></b></li>
+												<li><a title="Kapasitas"><i class="fas fa-users"></i></a><b>30 Orang</b></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						
+						</div>
+					</div>
+			
+				
+                            	</div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+                    
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                               
+                               
+
+
+
+
+
+
+
+
+
+
+
+
+
+              		
+              	
+             	</div>
+           
+
+    </div>
+    
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+           <div class="copyright">
+					<p><b>Portal BLKK</b> © 2022 All Rights Reserved</p>
+			</div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+		<!--**********************************
+           Support ticket button start
+        ***********************************-->
+		
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+	</div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+
+   
+    <!-- Required vendors -->
+    <script src="../vendor/global/global.min.js"></script>
+	<script src="../vendor/chart.js/Chart.bundle.min.js"></script>
+	 <!-- Daterangepicker -->
+    <!-- momment js is must -->
+    <script src="../vendor/moment/moment.min.js"></script>
+    <script src="../vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
+	
+	<script src="../vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="../vendor/select2/js/select2.full.min.js"></script>
+    <script src="../js/plugins-init/select2-init.js"></script>
+    <!-- Datatable -->
+    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../js/plugins-init/datatables.init.js"></script>
+
+	 <!-- pickdate -->
+    <script src="../vendor/pickadate/picker.js"></script>
+    <script src="../vendor/pickadate/picker.date.js"></script>
+
+	<!-- Apex Chart -->
+	<script src="../vendor/apexchart/apexchart.js"></script>
+	
+	<script src="../vendor/chart.js/Chart.bundle.min.js"></script>
+	
+	<!-- Chart piety plugin files -->
+    <script src="../vendor/peity/jquery.peity.min.js"></script>
+	<!-- Dashboard 1 -->
+	<script src="../js/dashboard/dashboard-1.js"></script>
+	 <!-- Chart Morris plugin files -->
+    <script src="../vendor/raphael/raphael.min.js"></script>
+    <script src="../vendor/morris/morris.min.js"></script>
+    <script src="../js/plugins-init/morris-init.js"></script>
+     <!-- Daterangepicker -->
+    <script src="../js/plugins-init/bs-daterange-picker-init.js"></script>
+    <!-- Pickdate -->
+    <script src="../js/plugins-init/pickadate-init.js"></script>
+
+	<script src="../vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+	
+	<script src="../vendor/owl-carousel/owl.carousel.js"></script>
+	
+    <script src="../js/custom.min.js"></script>
+	<script src="../js/dlabnav-init.js"></script>
+	
+	<script>
+		function cardsCenter()
+		{
+			
+			/*  testimonial one function by = owl.carousel.js */
+			
+	
+			
+			jQuery('.card-slider').owlCarousel({
+				loop:true,
+				margin:0,
+				nav:true,
+				//center:true,
+				slideSpeed: 3000,
+				paginationSpeed: 3000,
+				dots: true,
+				navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
+				responsive:{
+					0:{
+						items:1
+					},
+					576:{
+						items:1
+					},	
+					800:{
+						items:1
+					},			
+					991:{
+						items:1
+					},
+					1200:{
+						items:1
+					},
+					1600:{
+						items:1
+					}
+				}
+			})
+		}
+		
+		jQuery(window).on('load',function(){
+			setTimeout(function(){
+				cardsCenter();0
+			}, 1000); 
+		});
+
+
+		//Bar 
+		var donutChart = function(){
+			Morris.Donut({
+				element: 'morris_donught',
+				data: [{
+					label: "\xa0 \xa0 Materi \xa0 \xa0",
+					value: 12,
+
+
+				}, {
+					label: "\xa0 \xa0 Fasilitas \xa0 \xa0",
+					value: 30
+				}, {
+					label: "\xa0 \xa0 Mentor \xa0 \xa0",
+					value: 20
+				}],
+				resize: true,
+				redraw: true,
+				colors: ['#FFA7D7', 'rgb(255, 92, 0)', '#ffaa2b'],
+				//responsive:true,
+				
+			});
+		}
+	</script>
+
+</body>
+</html>
