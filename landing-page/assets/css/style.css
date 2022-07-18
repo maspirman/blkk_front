@@ -28699,7 +28699,7 @@ textarea {
         bottom: -8px; } }
   .messonry-button button:hover span.filter-text {
     color: #1292ee;
-     box-shadow: 0 0 40px rgba(100, 51, 51, 0.5); }
+     box-shadow: 0 0 40px rgba(51, 51, 51, 0.1); }
   .messonry-button button:hover::before {
     opacity: 1;
     visibility: visible; }
