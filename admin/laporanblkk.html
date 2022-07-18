@@ -780,7 +780,7 @@
                                                 
 					                            <div class="card-header">
 					                                <h4 class="card-title">Data Pelatihan</h4> <br>
-					                              <button data-bs-toggle="modal" data-bs-target="#add" type="button" class="btn btn-rounded btn-primary"><span class="btn-icon-start text-primary"><i class="fa fa-print color-info"></i>
+					                              <button data-bs-toggle="modal" data-bs-target="#exportpel" type="button" class="btn btn-rounded btn-primary"><span class="btn-icon-start text-primary"><i class="fa fa-print color-info"></i>
 					                                    </span>Export</button>
 					                            </div>
 												                            
@@ -826,7 +826,7 @@
 						                                                						                                              
 						                                                <td>
 																			<div class="d-flex">
-																				<a href="#" data-bs-toggle="modal" data-bs-target="#edit" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-info"></i></a>
+																				<a href="#" data-bs-toggle="modal" data-bs-target="#detailpel" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-info"></i></a>
 
 																			</div>											
 																		</td>												
@@ -848,7 +848,8 @@
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Data Peserta</h4> <br>
-                             
+                              <button data-bs-toggle="modal" data-bs-target="#exportpes" type="button" class="btn btn-rounded btn-primary"><span class="btn-icon-start text-primary"><i class="fa fa-print color-info"></i>
+					                                    </span>Export</button>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
@@ -981,16 +982,16 @@
                                 	
                                     <ul class="nav nav-tabs align-items-center">
                                         <li class="nav-item">
-                                            <a class="nav-link active" data-bs-toggle="tab" href="#addsyarat"><i class="la la-home me-2"></i> Persyaratan</a>
+                                            <a class="nav-link active" data-bs-toggle="tab" href="#addsyarat">Persyaratan</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#addkategori"><i class="la la-user me-2"></i> Kategori</a>
+                                            <a class="nav-link" data-bs-toggle="tab" href="#addkategori"></i> Kategori</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#addtype"><i class="la la-phone me-2"></i>  Type Data</a>
+                                            <a class="nav-link" data-bs-toggle="tab" href="#addtype">  Type Data</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#addtypepen"><i class="la la-phone me-2"></i>  Type Penilaian</a>
+                                            <a class="nav-link" data-bs-toggle="tab" href="#addtypepen"> Type Penilaian</a>
                                         </li>
                                        
                                     </ul>
@@ -1040,7 +1041,18 @@
                                             </div>
                                         </div>
                                          <div class="mb-3 row">
-                                            <label class="col-sm-3 col-form-label">Sataus</label>
+                                            <label class="col-sm-3 col-form-label">Penilaian</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control" name="kategori">
+                                                	<option>Grade</option>
+                                                	<option>Poin</option>
+                                                	<option>Grade</option>
+                                                	
+                                                </select>
+                                            </div>
+                                        </div>
+                                          <div class="mb-3 row">
+                                            <label class="col-sm-3 col-form-label">Status</label>
                                             <div class="col-sm-9">
                                                 <select class="form-control" name="kategori">
                                                 	<option>Status</option>
@@ -1074,7 +1086,7 @@
                                         <div class="mb-3 row">
                                             <label class="col-sm-3 col-form-label">Nama Kategori</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" placeholder="Judul Persyaratan">
+                                                <input type="text" class="form-control" placeholder="Nama Kategori">
                                             </div>
                                         </div>
                                         <div class="mb-3 row">
@@ -1117,7 +1129,7 @@
                                 </div>
                                 	<hr>
 						                            	<div class="table-responsive">
-						                                   <table class="table table-bordered table-responsive-sm">
+						                                   <table id="tabel" class="table table-bordered table-responsive-sm">
 						                                        <thead>
 						                                            <tr>
 						                                                <th>No</th>
@@ -1150,8 +1162,18 @@
 						                                    </table>
 						                                </div>
 
-						                            
-
+						                            <!-- <script>
+						                            	var tabel = document.getElementByid('tabel'),rIndex;
+						                            	for(var i = 0; i < tabel.rows.length; i++);
+						                            	{
+						                            		tabel.rows[i].onclick -function()
+						                            		{
+						                            			rIndex = this.rowIndex;
+						                            			console.log
+						                            		}
+						                            	}
+						                            </script>
+ -->
                             </div>
                                             </div>
                                         </div>
@@ -1246,8 +1268,102 @@
                             </div>
                                             </div>
                                         </div>
+
+
+
+
+<!--                                         add type penilaian
+ -->                                     
+
+
+
+         <div class="tab-pane fade" id="addtypepen">
+                                            <div class="pt-4">
+                                                                      
+                            <div class="card-header">
+                                <h4 class="card-title">Form Add Type Penilaian</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-form">
+                                    <form>
+                                        <div class="mb-3 row">
+                                            <label class="col-sm-3 col-form-label">Nama Type</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" placeholder="Nama Type Penilaian">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="col-sm-3 col-form-label">Keterangan</label>
+                                            <div class="col-sm-9">
+                                                <textarea class="form-control" placeholder="Keterangan"></textarea>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3 row">
+                                            <label class="col-sm-3 col-form-label">Nilai</label>
+                                                   <div class="col-sm-9">
+                                                    <div class="form-check  checkbox-primary">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" value="option1" checked="">
+                                                        <label class="form-check-label" >1-10</label>
+                                                    </div>
+                                                    <div class="form-check  checkbox-warning">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" value="option2">
+                                                        <label class="form-check-label" >A-D (A=10, B=80, C=60, D=40)</label>
+                                                    </div>
+                                                   
+                                                    
+                                                </div>
+                                          
+                                        </div>
+                                       
+                                        <div class="mb-3 row">
+                                            <div class="col-sm-10 float-right">
+                                                <button type="submit" class="btn btn-primary">Save</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <hr>
+						                            	<div class="table-responsive">
+						                                   <table class="table table-bordered table-responsive-sm">
+						                                        <thead>
+						                                            <tr>
+						                                                <th>No</th>
+						                                                <th>Nama Type</th>
+						                                                <th>Keterangan</th>
+						                                                <th>Nilai</th>
+						                                                <th>Action</th>
+						                                            </tr>
+						                                        </thead>
+						                                        <tbody>
+						                                            <tr>
+						                                                <td>1</td>
+						                                                <td>Grade</td>
+						                                                <td>Poin A-D.</td>
+						                                                <td><span class="badge badge-primary">Blue</span></td>
+						                                                
+						                                                						                                              
+						                                                <td>
+																			<div class="d-flex">
+																				<a href="#" data-bs-toggle="modal" data-bs-target="#edit" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-pencil-alt"></i></a>
+																				<a href="#" data-bs-toggle="modal" data-bs-target="#hapus" class="btn btn-danger shadow btn-xs sharp me-1"><i class="fas fa-trash"></i></a>
+
+																			</div>											
+																		</td>												
+						                                            </tr>
+						                                                    
+
+						                                       
+						                                        </tbody>
+						                                    </table>
+						                                </div>
+                            </div>
+                                            </div>
+                                        </div>
                                      
-                                    </div>
+<!--                                      type penilaian end
+ -->                                    </div>
                                 </div>
                             </div>
                         
@@ -1261,6 +1377,80 @@
                                     </div>	
 
 
+<!-- export pelatihan start -->
+
+                                         <div class="modal fade" id="exportpel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Export Dokumen</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="container">
+                                                       	<div class="d-flex align-items-center">
+                                                       		     <div class="card-body">
+                                <div class="basic-form">
+                                    <form>
+                                    	 <div class="row">
+                                            <div class="mb-3 col-md-6">
+                                                <label class="form-label">Dareah</label>
+                                                <select class="default-select form-control wide">
+                                                	<option> Semua Daerah</option>
+                                                	<option> DKI Jakarta</option>
+                                                	<option> Jawa Timur</option>
+                                                	<option> Jawa Barat</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-md-6">
+                                                <label class="form-label">Tahun</label>
+                                                <select class="default-select form-control wide">
+                                                	<option> Semua</option>
+                                                	<option> 2020</option>
+                                                	<option> 2021</option>
+                                                </select>
+                                            </div>
+                                          
+                                           
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="mb-3 col-md-6">
+                                                <label class="form-label">Status</label>
+                                                <select class="default-select form-control wide">
+                                                	<option> Semua</option>
+                                                	<option> Berjalan</option>
+                                                	<option> Belum Berjalan</option>
+                                                	
+                                                </select>
+                                            </div>
+                                                                                    
+                                           
+                                        </div>
+                                        
+                                        
+                                        <button type="submit" class="btn btn-primary">Export</button>
+                                    </form>
+                                </div>
+                            </div>
+																			
+														</div>		
+                                                       
+                                                      
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Close</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+<!-- export pelatihan end -->
+
+<!-- export persyaratan start -->
 
 
                                          <div class="modal fade" id="export1">
@@ -1326,6 +1516,92 @@
                                     </div>
 
 
+
+                 <!--                    export persyarata end -->
+
+
+<!-- export pelatihan start -->
+
+                                         <div class="modal fade" id="exportpes">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Export Dokumen</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="container">
+                                                       	<div class="d-flex align-items-center">
+                                                       		     <div class="card-body">
+                                <div class="basic-form">
+                                    <form>
+                                    	 <div class="row">
+                                            <div class="mb-3 col-md-6">
+                                                <label class="form-label">Dareah</label>
+                                                <select class="default-select form-control wide">
+                                                	<option> Semua Daerah</option>
+                                                	<option> DKI Jakarta</option>
+                                                	<option> Jawa Timur</option>
+                                                	<option> Jawa Barat</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-md-6">
+                                                <label class="form-label">Angkatan</label>
+                                                <select class="default-select form-control wide">
+                                                	<option> Semua</option>
+                                                	<option> 2020</option>
+                                                	<option> 2021</option>
+                                                </select>
+                                            </div>
+                                          
+                                           
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="mb-3 col-md-6">
+                                                <label class="form-label">Status</label>
+                                                <select class="default-select form-control wide">
+                                                	<option> Semua</option>
+                                                	<option> Aktif</option>
+                                                	<option> Tidak Aktif</option>
+                                                	<option> Alumni</option>
+                                                	
+                                                </select>
+                                            </div>                                                                                      
+                                        </div>
+                                        <div class="row">
+                                        	<div class="mb-3 col-md-12">
+                                                <label class="form-label">Pelatihan</label>
+                                                <select class="default-select form-control wide">
+                                                	<option> Semua</option>
+                                                	<option> <small class="fs-8">Pelatihan Junior Computer Asistant (BLKK PONPES AL AMIN)</small></option>
+                                                	
+                                                	
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <button type="submit" class="btn btn-primary">Export</button>
+                                    </form>
+                                </div>
+                            </div>
+																			
+														</div>		
+                                                       
+                                                      
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Close</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+<!-- export pelatihan end -->
 
 
 
@@ -1446,6 +1722,244 @@
                                         </div>
                                     </div>
 
+
+<!-- modal detail pelatihan start -->
+
+									<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true" id="detailpel">
+                                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Detail Pelatihan </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                	
+                                                	   
+
+							             				<div class="row">
+							             					
+											             		<div class="card">
+											              			<div class="card-body">
+				                                            			<div class="col-md-12"> 
+				                                            				<h2>Informasi Lembaga</h2>
+				                                                				
+				                                                <div class="pt-3">
+				                                                    <div class="settings-form">
+				                                                        
+				                                                      
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Nama Lembaga</label>
+				                                                                    <p>BLKK PONDOK PESANTREN AL-AMIN</p>
+				                                                                </div>
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Nomor VIN</label>
+				                                                                  <p>9788977868767567</p>
+				                                                                </div>
+				                                                            </div>
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Pimpinan</label>
+				                                                                   <p>Ali Murtadho, S.Pd</p>
+				                                                                </div>
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Tahun Berdiri</label>
+				                                                                    <p>2012</p>
+				                                                                </div>
+				                                                            </div>
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Status</label>
+				                                                                    <p>Beroperasi</p>
+				                                                                </div>
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Akreditasi</label>
+				                                                                    <p>Belum Terakreditasi</p>
+				                                                                </div>
+				                                                            </div>
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Luas Area</label>
+				                                                                    <p>400 M<sup>2</sup> </p>
+				                                                                </div>
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Jumlah Pegawai</label>
+				                                                                    <p>3 Orang (1 Laki-laki, 2 Perempuan)</p>
+				                                                                </div>
+				                                                            </div>
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Sektor Potensial</label>
+				                                                                    <p>KONSTRUKSI, INDUSTRI PENGOLAHAN (MANUFAKTUR), JASA</p>
+				                                                                </div>
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Kejuruan Unggulan</label>
+				                                                                    <p>Design Graphic</p>
+				                                                                </div>
+				                                                            </div>
+
+				                                                            
+				                                                            
+				                                                           
+							                                                        
+							                                                    </div>
+							                                                </div>
+				                                                   		 		
+								                                            </div>
+								                                        </div>
+								                                    </div>
+
+							             		</div>
+
+				                                    <div class="row">
+				                                    	
+				                                    		<div class="card">
+				                                    		
+				                                        <div class="card-body">
+                                            					<div class="col-md-12"> 
+                                            				<h2>Tentang Lembaga</h2>
+                                                				
+				                                                <div class="pt-3 justify-text">
+				                                                	<p>
+				                                                		LPK AIRI TEKNO Adalah Lembaga Pelatihan Kerja Yang Bergerak Di Bidang Teknologi Dan Bidang Bisnis Dan Managemen Yang Berdiri Pada Tahun 2019 Dengan Legalitas Akta Notaris Bernomor : 05 Tertanggal 05 Januari 2022 Yang Dibuat Oleh Notaris Panji Iswandi, SH., M.Kn. Surat Keterangan Terdaftar Dari Kementerian Hukum Dan Hak Asasi Manusia Bernomor : AHU-0000016-AH.01.18 Tahun 2022 Diterbitkan Di Jakarta Pada Tanggal 06 Januari Bertanda Tangan Cahyo Rahadian Muzhar, SH., LLM Selaku Dirjend Administrasi Hukum Umum. Nomor Induk Berwirausaha Diterbitkan Di Jakarta Pada Tanggal 02 Maret 2022 Oleh Kementerian Investasi ( Badan Koordinasi Penanaman Modal Dengan Nomor : 0203220043553.</p>
+				                                                		<p>Berdasarkan Penerbitan Surat Izin Menyelenggarakan Lembaga Pelatihan Kerja Yang Dikeluarkan Oleh Dinas Penanaman Modal Dan Pelayanan Satu Pintu Kota Makassar Pada Tanggal 07 Maret 2022 Bernomor : 503/0006/LPK/DPM-PTSP/III/2022 Dan Ditandatangi Oleh A. Zulkfly S.STP., M.Si Selaku Kepala Dinas LPK AIRI TEKNO Menyelenggarakan Enam (6) Pelatihan Kejuruan, Yaitu: 1.Bisnis Dan Manajemen (Sosial Media Marketing), 2. Teknik Otomotif, 3.Teknik Pendingin, 4. Teknik Pengelasan, 5.Tata Boga, 6. Tata Busana.</p>
+				                                                		<p>LPK AIRI TEKNO Mengupayakan Terciptanya Tenaga Kerja Yang Kompeten, Intelek, Bermoral Dan Berdaya Saing Global. Sebagai Lembaga Yang Baru Berdiri, LPK AIRI TEKNO Dalam Mencapai Visi Memperhatikan Dua Hal Penting Yaitu Peralatan Dan Instruktur.</p>
+																		<p>
+																		Untuk Ketersediaan Peralatan Yang Lengkap, Saat Ini LPK AIRI TEKNO Bekerjasama Dengan FAKULTAS TEKNIK UNM Dalam Hal Penggunaan Fasilitas Laboratorium. Sedangkan Untuk Instruktur, Berasal Dari Akademisi Dan Praktisi Di Bidangnya Masing-Masing.</p>																		
+																						                                                	</p>
+				                                                   
+				                                                </div>
+                                                   		 		
+				                                            </div>
+				                                        </div>	
+				                                    </div>
+				                                </div>
+				                                <div class="row">
+							             					
+											             		<div class="card">
+											              			<div class="card-body">
+				                                            			<div class="col-md-12"> 
+				                                            				<h2>Kejuruan Lembaga</h2>
+				                                                				
+				                                                <div class="pt-3">
+				                                                    <div class="settings-form">
+				                                                        
+				                                                      
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                   
+				                                                                   <ul>
+				                                                                   	<li> <p>Teknik Informatika</p>
+				                                                                    </li>
+				                                                                    <li><p>Teknik Tata Busana</p>
+				                                                                    </li>
+				                                                                    <li><p>Graphic Design</p></li>
+				                                                                   </ul>
+				                                                                </div>
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    
+				                                                                  <ul type="disc">
+				                                                                  	<li><p>Teknik Industri</p></li>
+				                                                                  </ul>
+				                                                                </div>
+				                                                            </div>
+				                                                         
+
+				                                                            
+				                                                            
+				                                                           
+							                                                        
+							                                                    </div>
+							                                                </div>
+				                                                   		 		
+								                                            </div>
+								                                        </div>
+								                                    </div>
+
+										             		</div>
+
+
+
+										             		<div class="row">
+							             					
+											             		<div class="card">
+											              			<div class="card-body">
+				                                            			<div class="col-md-12"> 
+				                                            				<h2>Jenis Lembaga</h2>
+				                                                				
+				                                                <div class="pt-3">
+				                                                    <div class="settings-form">
+				                                                        
+				                                                      
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Kepemilikan Instansi</label>
+				                                                                    <p>SWASTA</p>
+				                                                                </div>
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Nomor Licensi</label>
+				                                                                  <p>503/0006/LPK/DPM-PTSP/III/2022</p>
+				                                                                </div>
+				                                                            </div>
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Nomor Identitas PIC</label>
+				                                                                   <p>7313122710860002</p>
+				                                                                </div>
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Type Industri Berdiri</label>
+				                                                                    <p>BLKK SWASTA</p>
+				                                                                </div>
+				                                                            </div>
+				                                                            <div class="row">
+				                                                                <div class="mb-3 col-md-6">
+				                                                                    <label class="text-redup form-label">Nomor Pajak</label>
+				                                                                    <p>987979797887</p>
+				                                                                </div>
+				                                                                
+				                                                            </div>
+				                                                           
+
+				                                                            
+				                                                            
+				                                                           
+							                                                        
+							                                                    </div>
+							                                                </div>
+				                                                   		 		
+								                                            </div>
+								                                        </div>
+								                                    </div>
+
+							             					</div>
+
+
+
+
+
+
+
+				                                 
+				                                    
+
+				                               
+				                                   
+
+
+
+				                     <!--      modal body end -->
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+<!-- modal detail pelatihan end -->
 
 
 

@@ -27120,6 +27120,7 @@ textarea {
   align-items: center; }
 
 /* Header Right */
+
 .header-search a {
   line-height: 1;
   display: -webkit-box;
@@ -27130,6 +27131,12 @@ textarea {
   .header-search a i {
     font-size: 26px; }
   .header-search a:hover {
+    color: #1292ee; }
+    .header-section.is-sticky .header-search a {
+  
+  color: #000; }
+  
+  .header-section.is-sticky .header-search a:hover {
     color: #1292ee; }
 
 @media only screen and (max-width: 479px) {
@@ -27343,12 +27350,12 @@ textarea {
           bottom: 20px;
           left: 0;
           right: 0;
-          width: 8px;
-          height: 8px;
-          background: #FF8A00;
+          width: auto;
+          height: 2px;
+          background: #1292ee;
           text-align: center;
           margin: auto;
-          border-radius: 50%;
+          border-radius: 0%;
           opacity: 1;
           visibility: visible;
           -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -27584,6 +27591,9 @@ textarea {
       height: 2px; }
       .header-mobile-menu-toggle .toggle i + i, .mobile-menu-close .toggle i + i {
         margin-top: 6px; }
+         .header-section.is-sticky .header-mobile-menu-toggle .toggle i::before {
+         background-color: #000 !important;
+      }
       .header-mobile-menu-toggle .toggle i::before, .mobile-menu-close .toggle i::before, .header-mobile-menu-toggle .toggle i::after, .mobile-menu-close .toggle i::after {
         position: absolute;
         top: 0;
@@ -27924,13 +27934,61 @@ textarea {
   height: 100vh;
   padding: 50px 0; }
   .intro-section .container {
-    z-index: 9; }
+    z-index: 9;
+    margin-top: 1rem;
+   }
+   .intro-content .title {
+    /*animation: slide 12s steps(4) infinite !important;*/
+   }
+   @keyframes slide {
+    100%{
+      top:-360px;
+    }
+   }
+   .intro-content .jalan {
+    position: relative;
+    margin: auto;
+    line-height: 90px !important;
+    overflow: hidden;
+    color: transparent !important;
+    -webkit-text-stroke: 0.3vw #FFF;
+    color:#FFF;
+
+   }
+   .intro-content .jalan::before{
+   /* content: attr(data-text);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    overflow: hidden !important;
+    animation: typing 10s steps(18) infinite  !important;*/
+   }
+   
+   .intro-content .jalan::after {
+    position: absolute;
+    background:transparent;
+    left: 0;
+    content:"";
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #FFF;
+    animation: typing 10s steps(18) infinite  !important;
+  }
+  @keyframes typing{
+    100%{
+      left: 100%;
+      margin: 0 -20px 0 20px;
+    }
+    
+  }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .intro-section {
-      height: 550px; } }
+      height: auto; } }
   @media only screen and (max-width: 767px) {
     .intro-section {
-      height: 500px; } }
+      height: auto; } }
 
 .intro-content {
   max-width: 760px; }
@@ -27958,10 +28016,23 @@ textarea {
     .intro-content .btn {
       margin-top: 30px; } }
   @media only screen and (max-width: 479px) {
+   
+    .center{
+      text-align: center !important;
+      align-items: center !important;
+      font-size: 12px !important;
+
+    }
+    .intro-section .container {
+      min-height: 100%;
+    }
+     .intro-content {
+      margin-top: 5%;
+     }
     .intro-content .title {
-      font-size: 30px; }
+      font-size: 26px; }
     .intro-content .desc p {
-      font-size: 14px; } }
+      font-size: 12px; } }
 
 .intro-content > * {
   -webkit-animation-duration: 1s;
@@ -28162,7 +28233,8 @@ textarea {
     @media only screen and (max-width: 479px) {
       .about-image-area .about-image {
         right: 0;
-        width: 250px; } }
+        width: auto;
+        margin: 10px; } }
     .about-image-area .about-image:nth-child(2) {
       position: absolute;
       top: 70px;
@@ -28608,15 +28680,15 @@ textarea {
   .messonry-button button::before {
     content: "";
     position: absolute;
-    bottom: -15px;
+    bottom: -1px;
     left: 0;
     right: 0;
-    width: 7px;
-    height: 7px;
+    width: auto;
+    height: 2px;
     background: #1292ee;
     text-align: center;
     margin: auto;
-    border-radius: 50%;
+    border-radius: 0%;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -29594,9 +29666,8 @@ textarea {
   margin: 0 0 0 7px; }
 
 .footer-social-inline {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  
+ 
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: 40px;
@@ -29631,6 +29702,8 @@ textarea {
   line-height: 25px;
   text-align: center;
   padding: 20px 15px;
-  border-top: 1px solid #3f5054;
-  color: #fff;
+  color: #026792;
+  background-color: #F3FCFF;
+  border-top-left-radius: 50px;
+  border-top-right-radius:50px;
   margin-bottom: 0; }

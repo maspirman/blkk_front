@@ -223,6 +223,11 @@
   background: linear-gradient(to right, #a15cff 0%, #ce82fd 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a15cff', endColorstr='#ce82fd',GradientType=1 ); }
 
+.image-profile{
+  min-width: 80%;
+  min-height: 80%;
+}
+
 /*
 0 - 600: Phone
 600 - 900: Tablet portrait
@@ -9452,8 +9457,12 @@ label {
 @media only screen and (max-width: 63.9375rem) {
   .nav-header {
     width: 5rem; }
-    .nav-header .brand-title {
-      display: none; } }
+     .nav-header .brand-title {
+  width: 10%;
+  display: flex;
+     } }
+    
+    
 .nav-control {
   cursor: pointer;
   position: absolute;
